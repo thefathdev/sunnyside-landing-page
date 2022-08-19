@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 2.5em 4.5em;
+  background-color: var(--clr-accent-shiny-cyan);
+  color: var(--clr-accent-moderate-cyan);
+
+  &__logo {
+    margin-bottom: 2.75em;
+    align-self: center;
+    transform: scale(1.35);
+
+    > path {
+      fill: var(--clr-accent-moderate-cyan);
+    }
+  }
+
+  &__nav > ul {
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    color: var(--clr-accent-dark-cyan);
+  }
+
+  &__social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3em;
+  }
+}
