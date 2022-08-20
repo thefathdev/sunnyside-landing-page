@@ -25,6 +25,10 @@
 
   &__item {
     color: var(--clr-accent-dark-cyan);
+
+    &:hover {
+      color: var(--clr-neutral-0);
+    }
   }
 
   &__social-media {
@@ -33,5 +37,9 @@
     align-items: center;
     justify-content: space-between;
     padding-inline: 3em;
+  }
+
+  &__icon:hover > path {
+    fill: var(--clr-neutral-0);
   }
 }

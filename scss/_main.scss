@@ -5,7 +5,7 @@
 }
 
 .hero {
-  background-image: url('../public/images/mobile/image-header.jpg');
+  background-image: url('/images/mobile/image-header.jpg');
   background-size: cover;
   padding: 7.5em 1.5em;
   width: 100vw;
@@ -38,11 +38,11 @@
     background-size: cover;
 
     &--1 {
-      background-image: url('../public/images/mobile/image-transform.jpg');
+      background-image: url('/images/mobile/image-transform.jpg');
     }
 
     &--2 {
-      background-image: url('../public/images/mobile/image-stand-out.jpg');
+      background-image: url('/images/mobile/image-stand-out.jpg');
     }
   }
 
@@ -120,12 +120,12 @@
     }
 
     &--1 {
-      background-image: url('../public/images/mobile/image-graphic-design.jpg');
+      background-image: url('/images/mobile/image-graphic-design.jpg');
       color: var(--clr-accent-des-cyan);
     }
 
     &--2 {
-      background-image: url('../public/images/mobile/image-photography.jpg');
+      background-image: url('/images/mobile/image-photography.jpg');
       color: var(--clr-accent-dark-blue);
     }
   }
@@ -179,5 +179,29 @@
     text-align: center;
     font-size: 0.8em;
     color: var(--clr-neutral-200);
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__img {
+    background-size: cover;
+    width: 50vw;
+    height: 50vw;
+
+    &--1 {
+      background-image: url('/images/mobile/image-gallery-milkbottles.jpg');
+    }
+    &--2 {
+      background-image: url('/images/mobile/image-gallery-orange.jpg');
+    }
+    &--3 {
+      background-image: url('/images/mobile/image-gallery-cone.jpg');
+    }
+    &--4 {
+      background-image: url('/images/mobile/image-gallery-sugar-cubes.jpg');
+    }
   }
 }
