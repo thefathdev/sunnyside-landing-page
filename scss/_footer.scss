@@ -26,7 +26,8 @@
   &__item {
     color: var(--clr-accent-dark-cyan);
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--clr-neutral-0);
     }
   }
@@ -39,7 +40,8 @@
     padding-inline: 3em;
   }
 
-  &__icon:hover > path {
+  &__icon:hover > path,
+  &__icon:focus > path {
     fill: var(--clr-neutral-0);
   }
 }
