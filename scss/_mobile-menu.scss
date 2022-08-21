@@ -12,7 +12,7 @@
     width: calc(100vw - 2 * 1.5em);
     padding: 2em 0;
     background-color: var(--clr-neutral-0);
-    animation: fade-down 300ms ease-in-out both;
+    animation: scale-up-tr 300ms ease-in-out both;
 
     &::before {
       content: '';
@@ -52,23 +52,38 @@
       background-color: var(--clr-accent-soft-red);
     }
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
-@keyframes fade-down {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
   }
-
-  50% {
-    opacity: 0;
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
   }
+}
 
-  75% {
-    opacity: 1;
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
   }
-
-  to {
-    transform: none;
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
   }
 }

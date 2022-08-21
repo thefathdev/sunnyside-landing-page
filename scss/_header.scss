@@ -8,4 +8,19 @@
   width: 100vw;
   left: 0;
   top: 0;
+
+  &__logo {
+    width: 124px;
+    height: 24px;
+  }
+
+  // Desktop layout
+  @include desktop {
+    padding: 2.75em 2em;
+
+    &__logo {
+      width: 186px;
+      height: 36px;
+    }
+  }
 }
