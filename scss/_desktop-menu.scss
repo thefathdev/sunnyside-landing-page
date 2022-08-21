@@ -1,0 +1,36 @@
+.desktop-menu {
+  display: none;
+
+  @include desktop {
+    display: block;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2.5em;
+    }
+
+    &__item {
+      font-size: 1.1em;
+      color: var(--clr-neutral-0);
+
+      &:hover {
+        color: var(--clr-neutral-700);
+      }
+    }
+
+    &__btn {
+      padding: 1.35em 2em;
+      font-size: 0.85em;
+      line-height: 1;
+      color: var(--clr-neutral-700);
+      background-color: var(--clr-neutral-0);
+
+      &:hover {
+        color: var(--clr-neutral-0);
+        background-color: var(--clr-neutral-0-25);
+      }
+    }
+  }
+}

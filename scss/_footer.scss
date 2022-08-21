@@ -21,6 +21,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    @include desktop {
+      max-width: 20rem;
+      margin-inline: auto;
+    }
   }
 
   &__item {
@@ -38,6 +43,12 @@
     align-items: center;
     justify-content: space-between;
     padding-inline: 3em;
+
+    @include desktop {
+      max-width: 36rem;
+      align-self: center;
+      gap: 2em;
+    }
   }
 
   &__icon:hover > path,
