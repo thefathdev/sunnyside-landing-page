@@ -33,7 +33,7 @@
         src="./images/logo.svg"
         alt="Sunnyside's logo"
       />
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-state="closed">
         <a class="mobile-menu__toggle" href="javascript:void(0);">
           <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -43,13 +43,13 @@
             />
           </svg>
         </a>
-        <nav class="mobile-menu__nav" style="display: none">
+        <nav class="mobile-menu__nav">
           <ul class="mobile-menu__container">
             <li class="mobile-menu__item"><a href="#about">About</a></li>
             <li class="mobile-menu__item"><a href="#services">Services</a></li>
             <li class="mobile-menu__item"><a href="#projects">Projects</a></li>
-            <li class="mobile-menu__item">
-              <a href="#about" class="mobile-menu__btn btn">Contact</a>
+            <li class="mobile-menu__btn btn">
+              <a href="#contact" class="">Contact</a>
             </li>
           </ul>
         </nav>
@@ -187,7 +187,7 @@
     </main>
 
     <!-- Footer section -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <svg
         class="footer__logo"
         width="124"
