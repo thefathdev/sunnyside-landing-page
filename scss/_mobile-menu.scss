@@ -12,6 +12,7 @@
     width: calc(100vw - 2 * 1.5em);
     padding: 2em 0;
     background-color: var(--clr-neutral-0);
+    animation: fade-down 300ms ease-in-out both;
 
     &::before {
       content: '';
@@ -50,5 +51,24 @@
       color: var(--clr-neutral-0);
       background-color: var(--clr-accent-soft-red);
     }
+  }
+}
+
+@keyframes fade-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  to {
+    transform: none;
   }
 }
