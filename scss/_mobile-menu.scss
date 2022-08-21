@@ -2,8 +2,7 @@
   position: relative;
 
   &[data-state='closed'] .mobile-menu__nav {
-    // display: none; TODO: add toggle in js
-    display: block;
+    display: none;
   }
 
   &__nav {
