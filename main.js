@@ -140,7 +140,6 @@ gsap.from('.projects__img', {
     trigger: '.projects__img',
     start: 'top center',
     end: 'bottom 80%',
-    markers: true,
   },
   ease: 'power2.out',
   stagger: 0.25,
